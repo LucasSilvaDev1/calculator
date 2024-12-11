@@ -16,10 +16,17 @@
     background-color: rgb(27, 27, 27);
     height: 450px;
     width: 280px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.274);
 }
 
 .display{
-    height: 60px;
+    background-color:  rgba(50, 50, 50, 0.493);
+    height: 50px;
+    width: 250px;
+    margin: 10px 16px;
+    padding: 5px;
+    border-radius: 5px;
     color: white;
     text-align: end;
     margin-right: 5px;
@@ -42,6 +49,5 @@ button{
 }
 
 button:hover{
-   
-    border: 1px solid white;
+   background-color:  rgba(52, 51, 51, 0.523);
 }
