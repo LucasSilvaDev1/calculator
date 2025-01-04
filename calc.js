@@ -1,2 +1,36 @@
-let resul = document.getElementById('display').value
 
+function addToDisplay(value) {
+    const display =
+        document.getElementById('display');
+    if (display.textContent === '0') {
+        display.textContent = value
+    } else {
+        display.textContent += value
+    }
+}
+
+function calcular() {
+    const display = document.getElementById('display');
+    try {
+        const result = eval(display.textContent);
+        display.textContent = result;
+    } catch (error) {
+        display.textContent = "Erro"
+    }
+
+}
+
+function clear() {
+    const display = document.getElementById('display');
+    display.innerText = "0"
+}
+
+function backspace() {
+    const display = document.getElementById('display')
+    const content = display.textContent
+    if (content.length > 1) {
+        display.textContent = content.slice(0, -1);
+    } else {
+        display.textContent = "0";
+    }
+}
