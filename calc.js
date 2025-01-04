@@ -15,14 +15,14 @@ function calcular() {
         const result = eval(display.textContent);
         display.textContent = result;
     } catch (error) {
-        display.textContent = "Erro"
+        display.textContent = '0'
     }
 
 }
 
-function clear() {
+function limpar() {
     const display = document.getElementById('display');
-    display.innerText = "0"
+    display.textContent = "0"
 }
 
 function backspace() {
