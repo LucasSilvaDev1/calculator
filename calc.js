@@ -34,3 +34,7 @@ function backspace() {
         display.textContent = "0";
     }
 }
+
+function exibirBtns(){
+    
+}
