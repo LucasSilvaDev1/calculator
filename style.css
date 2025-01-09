@@ -17,23 +17,46 @@
     background-color: rgb(45, 43, 37);
 }
 
-.calculadora {
+
+.calculadora2 {
     background-color: rgb(27, 27, 27);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 
     height: 530px;
     width: 370px;
     border-radius: 10px;
     box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.274);
     padding: 15px 0px 20px 0px;
+
+    transition: ease-in-out 0.2s;
 }
 
-.display {
+.calculadora {
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 410px;
+    width: 330px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.274);
+    padding: 15px 0px 20px 0px;
+
+    transition: ease-in-out 0.2s;
+}
+
+
+.display2 {
     background-color: rgba(40, 39, 39, 0.635);
-    height: 80px;
-    width: 320px;
+    height: 50px;
+    width: 325px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
     margin: 10px 24px;
     padding: 7px 15px 0px 0px;
     border-radius: 5px;
@@ -41,12 +64,41 @@
     text-align: end;
     margin-right: 5px;
     font-size: xx-large;
+
+    transition: ease-in-out 0.2s;
+}
+
+.display{
+    background-color: rgba(40, 39, 39, 0.635);
+    height: 50px;
+    width: 280px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 10px 24px;
+    padding: 7px 15px 0px 0px;
+    border-radius: 5px;
+    color: white;
+    text-align: end;
+    margin-right: 5px;
+    font-size: xx-large;
+
+    transition: ease-in-out 0.2s;
+}
+
+.btns2 {
+    margin: 0px 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 7px;
+
+    transition: ease-in-out 0.2s;
 }
 
 .btns {
     margin: 0px 20px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 7px;
 }
 
@@ -54,17 +106,21 @@
     color: gray;
     display: none;
 }
+.btn {
+    color: gray;
+    transition: step-end 0.7s;
+}
 
 .operadores{
-    color: orange;
-    font-size: xx-large;
+    color: #ffa500;
+    font-size: x-large;
 }
 
 
 button {
     color: white;
     background-color: rgba(40, 39, 39, 0.635);
-    padding: 12px;
+    padding: 10px;
     font-size: x-large;
     border-radius: 6px;
     border: none;
