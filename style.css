@@ -52,6 +52,7 @@
 
 .calcsAdicionais{
     color: gray;
+    display: none;
 }
 
 .operadores{

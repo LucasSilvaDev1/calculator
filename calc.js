@@ -34,7 +34,13 @@ function backspace() {
         display.textContent = "0";
     }
 }
+function exibirBtns() {
+    const btn = document.getElementById('addbutton');
+    const btns = document.querySelectorAll(".calcsAdicionais");
 
-function exibirBtns(){
-    
+    btn.addEventListener("click", () =>{
+        btns.forEach(button =>{
+           button.style.display = button.style.display === "none" ? "block" : "none";
+        })
+    })
 }
