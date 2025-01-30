@@ -21,8 +21,11 @@
         <button class="calcsAdicionais btn">xy</button>
         <button class="calcsAdicionais btn">lg</button>
         <button class="calcsAdicionais btn">in</button>
-        <button class="calcsAdicionais btn">(</qbutton>
-          <button class="calcsAdicionais btn">)</button>
+
+        <button onclick="addToDisplay('(')" class="calcsAdicionais btn">(</button>
+          <button class="calcsAdicionais btn"
+           onclick="addToDisplay(')')">)</button>
+
           <button class="calcsAdicionais btn">√x</button>
           <button style="color: orange;" onclick="limpar()">C</button>
           <button onclick="backspace()"><img src="delete.png" alt=""></button>
